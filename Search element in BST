@@ -1,0 +1,16 @@
+//to search any element
+node* BST::search(int data){
+    node *ptr;
+    ptr=root;
+    while(ptr){
+        if(ptr->item==data)
+        return ptr;
+
+        else if(ptr->item>data)
+        ptr=ptr->left;
+
+        else
+        ptr=ptr->right;
+    }
+    return NULL;
+}
